@@ -16,8 +16,8 @@ def key_for_min_value(name_hash)
       temp = min_value[0]
       min_value[0] = value
       min_value << temp
-      key_for_min_value.unshift(key)
+      key_for_min_value[0] = key
     end
   end
-  return
+  return key_for_min_value[0]
 end
